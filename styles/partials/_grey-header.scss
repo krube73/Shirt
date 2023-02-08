@@ -1,0 +1,77 @@
+$grey-header-bg: #EAEBEC;
+$grey-header-text: #7D7D7D;
+
+
+/** grey header **/
+.grey-header {
+	@include bg-color($grey-header-bg);
+
+	/** GREY HEADER INNER **/
+	.grey-header-inner {
+	  @include overflow(visible, null);
+	  @include padding(0,null,0,null);
+	  @include text-align(right);
+	  
+	  /** SPAN **/
+	  .intro-bold-chat {
+		  @include float(right);
+		  //@include display(inline);
+		  @include padding(6px,null,6px,null);
+		  @include margin(-4px, 0,0,0);
+		  @include box-size(68px, null);
+		  @include overflow(hidden, hidden);
+		  
+		  
+		  a {
+		  	@include margin(null,0,0,-15px);
+		  }
+	  }
+	  
+	  span  {
+		  @include float(right);
+		  @include padding(9px,null,9px,null);
+		  @include font(null, 13px, $grey-header-text, null);
+		  
+		  @include mobile {
+		  	@include font(null, 18px, null, bold);
+		  }
+		  
+			a {
+				@include font(null, null, $grey-header-text, null);
+				@include text-decoration(none);
+				@include float(left);
+				@include padding(null,9px,null,9px);
+				@include cursor(pointer);
+				
+				@include mobile {
+					@include font(null, 16px, null, bold);
+					@include text-align(left);
+				}
+		  }
+		  
+		  /** customer service **/
+		  &.customer-service {
+			  &:after {
+				content: "/";
+				@include font(null, 14px , lighten($grey-header-text, 5%), null);
+			  }
+			  
+			  @include mobile {
+				@include text-align(center);
+				@include padding(null, null, null, null);
+				@include float(left);
+				
+				&:after {
+					content: "";
+				}
+			  }
+		  }
+		  /** end customer service **/
+	  }
+	  /** END SPAN **/
+	  
+	}
+	/** END GREY HEADER INNER **/
+}
+
+/** end grey header **/

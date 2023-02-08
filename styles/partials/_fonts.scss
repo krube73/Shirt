@@ -1,0 +1,307 @@
+$FontPath : "../fonts/";
+@mixin font-normal {
+	font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+	font-family: 'LiberationSansRegular';
+	src: url('#{$FontPath}LiberationSans-Regular-webfont.eot');
+	src: url('#{$FontPath}LiberationSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}LiberationSans-Regular-webfont.ttf') format('truetype'),
+	url('#{$FontPath}LiberationSans-Regular-webfont.woff') format('woff'),
+	url('#{$FontPath}LiberationSans-Regular-webfont.svg#LiberationSansRegular') format('svg');
+	@include font-normal;
+}
+
+
+@font-face {
+	font-family: 'LiberationSansItalic';
+	src: url('#{$FontPath}LiberationSans-Italic-webfont.eot');
+	src: url('#{$FontPath}LiberationSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}LiberationSans-Italic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}LiberationSans-Italic-webfont.woff') format('woff'),
+	url('#{$FontPath}LiberationSans-Italic-webfont.svg#LiberationSansItalic') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'LiberationSansBold';
+	src: url('#{$FontPath}LiberationSans-Bold-webfont.eot');
+	src: url('#{$FontPath}LiberationSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}LiberationSans-Bold-webfont.ttf') format('truetype'),
+	url('#{$FontPath}LiberationSans-Bold-webfont.woff') format('woff'),
+	url('#{$FontPath}LiberationSans-Bold-webfont.svg#LiberationSansBold') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'LiberationSansBoldItalic';
+	src: url('#{$FontPath}LiberationSans-BoldItalic-webfont.eot');
+	src: url('#{$FontPath}LiberationSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}LiberationSans-BoldItalic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}LiberationSans-BoldItalic-webfont.woff') format('woff'),
+	url('#{$FontPath}LiberationSans-BoldItalic-webfont.svg#LiberationSansBoldItalic') format('svg');
+	@include font-normal;
+}
+
+
+@font-face {
+	font-family: 'TeXGyreTermesRegular';
+	src: url('#{$FontPath}texgyretermes-regular-webfont.eot');
+	src: url('#{$FontPath}texgyretermes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}texgyretermes-regular-webfont.ttf') format('truetype'),
+	url('#{$FontPath}texgyretermes-regular-webfont.woff') format('woff'),
+	url('#{$FontPath}texgyretermes-regular-webfont.svg#TeXGyreTermesRegular') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'TeXGyreTermesItalic';
+	src: url('#{$FontPath}texgyretermes-italic-webfont.eot');
+	src: url('#{$FontPath}texgyretermes-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}texgyretermes-italic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}texgyretermes-italic-webfont.woff') format('woff'),
+	url('#{$FontPath}texgyretermes-italic-webfont.svg#TeXGyreTermesItalic') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'TeXGyreTermesBold';
+	src: url('#{$FontPath}texgyretermes-bold-webfont.eot');
+	src: url('#{$FontPath}texgyretermes-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}texgyretermes-bold-webfont.ttf') format('truetype'),
+	url('#{$FontPath}texgyretermes-bold-webfont.woff') format('woff'),
+	url('#{$FontPath}texgyretermes-bold-webfont.svg#TeXGyreTermesBold') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'aleobold';
+	src: url('#{$FontPath}aleo-bold-webfont.eot');
+	src: url('#{$FontPath}aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-bold-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-bold-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-bold-webfont.svg#aleobold') format('svg');
+	@include font-normal;
+}
+
+
+@font-face {
+	font-family: 'aleobolditalic';
+	src: url('#{$FontPath}aleo-bolditalic-webfont.eot');
+	src: url('#{$FontPath}aleo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-bolditalic-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-bolditalic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-bolditalic-webfont.svg#aleobolditalic') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'aleoitalic';
+	src: url('#{$FontPath}aleo-italic-webfont.eot');
+	src: url('#{$FontPath}aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-italic-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-italic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-italic-webfont.svg#aleoitalic') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'aleolight';
+	src: url('#{$FontPath}aleo-light-webfont.eot');
+	src: url('#{$FontPath}aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-light-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-light-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-light-webfont.svg#aleolight') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'aleolightitalic';
+	src: url('#{$FontPath}aleo-lightitalic-webfont.eot');
+	src: url('#{$FontPath}aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-lightitalic-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-lightitalic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-lightitalic-webfont.svg#aleolightitalic') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'aleoregular';
+	src: url('#{$FontPath}aleo-regular-webfont.eot');
+	src: url('#{$FontPath}aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-regular-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-regular-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-regular-webfont.svg#aleoregular') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'aleoitalic';
+	src: url('#{$FontPath}aleo-italic-webfont.eot');
+	src: url('#{$FontPath}aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}aleo-italic-webfont.woff') format('woff'),
+	url('#{$FontPath}aleo-italic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}aleo-italic-webfont.svg#aleoitalic') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'entyporegular';
+	src: url('#{$FontPath}entypo.eot');
+	src: url('#{$FontPath}entypo.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}entypo.woff') format('woff'),
+	url('#{$FontPath}entypo.ttf') format('truetype'),
+	url('#{$FontPath}entypo.svg#entyporegular') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'entyposcoial';
+	src: url('#{$FontPath}entypo-social.eot');
+	src: url('#{$FontPath}entypo-social.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}entypo-social.woff') format('woff'),
+	url('#{$FontPath}entypo-social.ttf') format('truetype'),
+	url('#{$FontPath}entypo-social.svg#entyporegular') format('svg');
+	@include font-normal;
+} */
+
+@font-face {
+	font-family: 'arvobold';
+	src: url('#{$FontPath}arvo/arvo-bold-webfont.eot');
+	src: url('#{$FontPath}arvo/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}arvo/arvo/arvo-bold-webfont.woff') format('woff'),
+	url('#{$FontPath}arvo/arvo-bold-webfont.ttf') format('truetype'),
+	url('#{$FontPath}arvo/arvo-bold-webfont.svg#arvobold') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'arvobold_italic';
+	src: url('#{$FontPath}arvo/arvo-bolditalic-webfont.eot');
+	src: url('#{$FontPath}arvo/arvo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}arvo/arvo-bolditalic-webfont.woff') format('woff'),
+	url('#{$FontPath}arvo/arvo-bolditalic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}arvo/arvo-bolditalic-webfont.svg#arvobold_italic') format('svg');
+	@include font-normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'arvoitalic';
+	src: url('#{$FontPath}arvo/arvo-italic-webfont.eot');
+	src: url('#{$FontPath}arvo/arvo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$FontPath}arvo/arvo-italic-webfont.woff') format('woff'),
+	url('#{$FontPath}arvo/arvo-italic-webfont.ttf') format('truetype'),
+	url('#{$FontPath}arvo/arvo-italic-webfont.svg#arvoitalic') format('svg');
+	@include font-normal;
+}
+
+@font-face {
+	font-family: 'arvoregular';
+	src: url('#{$FontPath}arvo/arvo-regular-webfont.eot');
+	src: url('#{$FontPath}arvo/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('#{$FontPath}arvo/arvo-regular-webfont.woff') format('woff'),
+		url('#{$FontPath}arvo/arvo-regular-webfont.ttf') format('truetype'),
+		url('#{$FontPath}arvo/arvo-regular-webfont.svg#arvoregular') format('svg');
+	@include font-normal;
+}
+
+/*@font-face {
+    font-family: 'texgyreherosbold';
+    src: url('#{$FontPath}texgyreheros-bold-webfont.eot');
+    src: url('#{$FontPath}texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheros-bold-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheros-bold-webfont.svg#texgyreherosbold') format('svg');
+    	@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreherosbold_italic';
+    src: url('#{$FontPath}texgyreheros-bolditalic-webfont.eot');
+    src: url('#{$FontPath}texgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheros-bolditalic-webfont.svg#texgyreherosbold_italic') format('svg');
+		@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreherositalic';
+    src: url('#{$FontPath}texgyreheros-italic-webfont.eot');
+    src: url('#{$FontPath}texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheros-italic-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheros-italic-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheros-italic-webfont.svg#texgyreherositalic') format('svg');
+			@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreherosregular';
+    src: url('#{$FontPath}texgyreheros-regular-webfont.eot');
+    src: url('#{$FontPath}texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheros-regular-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+		@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreheroscnbold';
+    src: url('#{$FontPath}texgyreheroscn-bold-webfont.eot');
+    src: url('#{$FontPath}texgyreheroscn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheroscn-bold-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheroscn-bold-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheroscn-bold-webfont.svg#texgyreheroscnbold') format('svg');
+		@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreheroscnbold_italic';
+    src: url('#{$FontPath}texgyreheroscn-bolditalic-webfont.eot');
+    src: url('#{$FontPath}texgyreheroscn-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheroscn-bolditalic-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheroscn-bolditalic-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheroscn-bolditalic-webfont.svg#texgyreheroscnbold_italic') format('svg');
+		@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreheroscnitalic';
+    src: url('#{$FontPath}texgyreheroscn-italic-webfont.eot');
+    src: url('#{$FontPath}texgyreheroscn-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheroscn-italic-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheroscn-italic-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheroscn-italic-webfont.svg#texgyreheroscnitalic') format('svg');
+		@include font-normal;
+}
+
+@font-face {
+    font-family: 'texgyreheroscnregular';
+    src: url('#{$FontPath}texgyreheroscn-regular-webfont.eot');
+    src: url('#{$FontPath}texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}texgyreheroscn-regular-webfont.woff') format('woff'),
+         url('#{$FontPath}texgyreheroscn-regular-webfont.ttf') format('truetype'),
+         url('#{$FontPath}texgyreheroscn-regular-webfont.svg#texgyreheroscnregular') format('svg');
+		@include font-normal;
+} */
+
