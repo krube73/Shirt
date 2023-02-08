@@ -1,0 +1,694 @@
+@import '../partials/mixins';
+
+@import '../partials/grey-header';
+@import '../partials/main-nav';
+
+
+/** CONSTANTS **/
+
+$section-border-color : #DEDEDE;
+$link-color: #0D6DB2;
+$select-border-color: #DEDEDE;
+$select-bg-color: #F5F5F5;
+$select-text-color: #003358;
+$color-section-title: #F5F4F4;
+$color-section-title-active: #B2B4B6;
+$color-section-border: #F5F4F4;
+$color-text: #363636;
+/** END CONSTANTS **/
+body {
+	@include font($font-helvetica, null , $color-text, regular);
+    @include transition(all, 0.4s, ease-in-out);
+}
+
+/** MIXINS **/
+@mixin select {
+	
+	@include desktop {
+		@include font($font-helvetica, 12px , $select-text-color, regular);
+		@include padding(3px,6px,3px,6px);
+	}
+	
+	@include tablet {
+		@include font($font-helvetica, 12px , $select-text-color, regular);
+		@include padding(3px,6px,3px,6px);
+	}
+	
+	
+	
+	@include mobile {
+		@include font(null, 12px, null, bold);
+		@include padding(3px,3px,3px,3px);
+		-webkit-appearance: none;	
+	}
+	
+	@include padding(6px,3px,6px,3px);
+	@include border(solid, 1, $select-border-color);
+	@include bg-color($select-bg-color);
+	@include border-radius(4,4,4,4);
+}
+
+/** INPUTS **/
+//input, textarea, select, a { outline: none; }
+
+
+input[type="text"], input[type="password"], textarea {
+  @include border(solid, 1, $select-border-color );
+  @include border-radius(3,3,3,3);
+  @include padding(3px,6px,3px,6px);
+}
+
+select {
+	@include select;
+	@include box-size(100%, null);
+	
+	&:focus {
+		outline:none;
+	}
+}
+/** END INPUTS **/
+
+
+
+/** END MIXINS **/
+
+/***************
+ Bootstrap sizes
+ **************/
+@media (min-width: 768px) {
+  body {
+    margin: 0 auto;
+}
+
+  .container {
+    	padding: 0;
+    	width: 714px; 
+	} 
+}
+
+@media (min-width: 992px) {
+  .container {
+    	width: 970px;
+	} 
+	
+}
+
+@media (min-width: 1200px) {
+  .container {
+	  width: 1134px; 
+  } 
+}
+/***************
+
+
+  
+  /** buttons **/
+  .button {
+	@include font(null, 14px, null, bold);
+	@include text-align(center);
+	@include float(left);
+	@include padding(9px,15px,9px,15px);
+	@include border-radius(4,4,4,4);
+	@include cursor(pointer);
+	
+	&.video {
+		@include font(null, 16px, #FFF, null);
+		@include bg-color( lighten($color-blue, 15%));
+	}
+	
+	&.monogram {
+		@include font(null, 14px, #FFF, null);
+		@include bg-color( lighten($color-blue, 25%));
+		
+		i {
+			@include margin(null, null, null, 6px);
+		}
+	}
+}
+  /** end buttons **/
+  
+  
+  /** modal **/
+	.modal-body {
+		
+		/** row **/ 
+		.row {
+			@include margin(6px, null, 6px, null);
+			
+			.select {
+				@include select;
+			}
+			
+			input[data-ref = mono-initials] {
+				text-transform: uppercase;
+			}
+		}
+		/** end row **/
+		
+		
+		
+		.mono-instruction-container {
+			//@include display(relative);
+			//@include float(left);
+			@include padding(null, null, null, null);
+			@include box-size(100%, null);
+			@include font(null, 12px, null, null);
+			
+			/*.mono-instruction{
+				@include box-size(100%, null);
+				@include margin(12px, null, null, 15px);
+			}*/
+		}
+		
+		.mono-preview-container {
+			@include float(left);
+			@include margin(24px, null, 12px, null);
+			@include padding(12px, null, null, null);
+			@include box-size(100%, null);
+			@include border-top(dotted, 1, #ccc);
+			
+			.mono-preview {
+				@include text-align(center);
+				@include box-size(null, 49px);
+				@include padding(6px,6px,6px,6px);
+				
+				@include border(solid, 1, $select-border-color);
+				@include bg-color(#FFF);
+				@include border-radius(4,4,4,4);
+			}
+		}
+	
+	}
+  /** end modal **/
+  
+  
+  
+  
+  /** custom DS styles **/
+  
+  .custom-ds-page {
+  	@include padding(36px, null, null, null);
+	@include float(left);
+  }
+  
+  #leftSide, #rightSide {
+  }
+  
+  /** option section **/
+  .option-section {
+  	@include border(solid, 1, darken($color-section-border, 15%) );
+	@include margin(null, null, 30px, null);
+	@include border-radius(4,4,4,4);
+	@include drop-shadow(3, 3, 6, lighten($color-gray, 10%), .45);
+	
+	/** option-title **/
+	.option-title {
+		@include font(null, 18px, darken($color-gray, 25%), bold);
+		@include bg-color($color-section-title);
+		//@include vertical-gradient( lighten(#000, 5%), darken(#CCC,45%), 0%, 100%);
+		@include border-radius(4, 4, 4, 4);
+		@include padding(6px, 6px, 6px, 9px);
+		@include border-bottom(solid, 1, $color-section-border);
+		@include cursor(pointer);
+		@include box-size(100%,null);
+		@include float(left);
+		@include text-shadow(0, 0, 5, darken($color-section-title,40%), .6);
+		
+		/** status icon **/
+		i {
+			@include font(null, 24px, $color-blue, normal);
+			@include padding(3px, 3px, 3px, 3px);
+			@include margin(null, 3px, null, null);
+			@include display(none);
+		}
+		/** end status icon **/
+	}
+	/** end option-title **/
+	
+	
+	/** option container **/
+	.option-container {
+		@include margin(9px, null, null, null);
+		@include display(none);
+		
+		&[data-name=style] {
+			@include margin(0px, null, null, null);
+		}
+		
+		
+		.select-container {
+			.sub-title {
+				@include font(null, 16px, lighten($color-text, 20%), null);
+				@include padding(null, null, 6px, null);
+			}
+		}
+		
+		.hints-container {
+			@include font(null, 12px, $color-blue, null);
+			@include margin(9px, null, null, null);
+			
+			div{
+				@include cursor(pointer);
+			}
+		}
+		
+		//image container
+		.image-container {
+			@include margin(21px, null, null, null);
+			
+			&.fit-container {
+			}
+			
+			&.swatch-container {
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+				}
+			}
+			
+			//colar container
+			&.collar-container {
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 15%), bold);
+					@include text-align(center);
+				}
+				
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+					max-width:70px;
+				}
+			}
+			//end collar container
+			
+			//cuff container
+			&.cuff-container {
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 15%), bold);
+					@include text-align(center);
+				}
+				
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+					max-width:70px;
+				}
+			}
+			//end cuff container
+			
+			//pocket container
+			&.pocket-container {
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 15%), bold);
+					@include text-align(center);
+				}
+				
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+					max-width:145px;
+				}
+			}
+			//end pocket container
+			
+			//pleat container
+			&.pleat-container {
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 15%), bold);
+					@include text-align(center);
+				}
+				
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+					max-width:125px;
+				}
+			}
+			//end pleat container
+			
+			
+			//placket container
+			&.placket-container {
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 15%), bold);
+					@include text-align(center);
+				}
+				
+				img {
+					@include margin(null, null, 9px, null);
+					@include box-size(100%,null);
+					max-width:80px;
+				}
+			}
+			//end placket container
+			
+		}
+		//end image container
+		
+		//option
+			.option{
+				@include padding(6px,null,6px,null);
+				@include margin(null, null, 12px, null);
+				@include border(dotted, 1, darken($color-section-border, 15%));
+				@include border-radius(4,4,4,4);
+				@include text-align(center);
+				@include display(inline);
+				@include float(left);
+				@include cursor(pointer);
+				
+				//swatch
+				&.swatch {
+					@include box-size(23%, null);
+					@include margin(null, 1%, null, 1%);
+				}
+				//end swatch
+				
+				//collar
+					&.collar {
+						@include box-size(23%, 125px);
+						@include margin(null, 1%, null, 1%);
+						
+						//contrast collar
+						&.contrast {
+							@include box-size(31%, null);
+							@include margin(null, 1%, null, 1%);
+							@include border(dotted, 1, darken($color-section-border, 30%));
+							
+								&:hover {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+								}
+								
+								&.active {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+									@include bg-color(#FFF);
+								}
+						}
+						//end contrast collar
+						
+						//collar sttitch
+						&.stitch {
+							@include box-size(48%, null);
+							@include margin(null, 1%, null, 1%);
+							@include border(dotted, 1, darken($color-section-border, 30%));
+							
+								&:hover {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+								}
+								
+								&.active {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+									@include bg-color(#FFF);
+								}
+						}
+						//end collar stitch
+				}
+				//end collar
+				
+				//cuff
+				&.cuff {
+						@include box-size(31%, 115px);
+						@include margin(null, 1%, null, 1%);
+						
+						//contrast cuff
+						&.contrast {
+							@include box-size(31%, null);
+							@include margin(null, 1%, null, 1%);
+							@include border(dotted, 1, darken($color-section-border, 30%));
+							
+								&:hover {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+								}
+								
+								&.active {
+									@include border(solid, 1, tint($color-blue, 20%));
+									@include drop-shadow(0, 0, 6, darken($color-blue, 5%), .45);
+									@include bg-color(#FFF);
+								}
+						}
+						//end contrast cuff
+				}
+				//end cuff
+				
+				//pocket
+				&.pocket {
+						@include box-size(31%, 145px);
+						@include margin(null, 1%, null, 1%);
+				}
+				//end pocket
+				
+				//pleat
+				&.pleat {
+						@include box-size(31%, 145px);
+						@include margin(null, 1%, null, 1%);
+				}
+				//end pleat
+				
+				//placket
+				&.placket {
+						@include box-size(31%, 125px);
+						@include margin(null, 1%, null, 1%);
+				}
+				//end placket
+				
+				&:hover {
+					@include border(solid, 1, tint($color-blue, 20%));
+					@include drop-shadow(0, 0, 6, lighten($color-gray, 5%), .45);
+				}
+				
+				&.active {
+					@include border(solid, 1, tint($color-blue, 30%));
+					@include drop-shadow(0, 0, 6, lighten($color-gray, 6%), .75);
+					@include vertical-gradient( #fff, tint($color-blue, 5%), 75%, 100%);
+				}
+				
+				
+				
+				//option text //
+				.option-text {
+					@include font(null, 11px, lighten($color-text, 20%), bold);
+					@include text-align(left);
+					text-transform: capitalize;
+					
+					.title {
+						@include font(null, null, darken($color-text, 25%), bold);
+					}
+					
+					&.contrast {
+						@include font(null, 11px, $color-blue, bold);
+						@include text-align(center);
+						@include padding(9px, null, 6px, null);
+					}
+				}
+				// end option text //
+			}
+			//end option
+			
+		
+		//swatch-container
+		.swatch-container {
+			@include font(null, 12px, null, null);
+		}
+		//end swatch container
+		
+		//action button container
+		.action-button-container {
+			@include margin(30px, null, null, null);
+			
+			&.sub {
+				@include margin(0px, null, null, null);
+				@include padding(0px, null, null,null);
+				@include bg-color( tint($color-blue, 5%) );
+				
+				.action-button {
+					@include vertical-gradient( #fff, tint($color-blue, 40%), 50%, 100%);
+				}
+			}
+			
+			.action-button {
+				@include font(null, 12px, tint($color-blue, 65%), bold);
+				@include padding(6px, 12px, 6px, 12px);
+				@include border-top(dotted, 1, tint($color-blue, 45%));
+				@include cursor(pointer);
+				@include vertical-gradient( #fff, tint($color-blue, 15%), 50%, 100%);
+				
+				
+				&.previous {
+					@include float(left);
+					@include border-radius(4, null, 1, null);
+					@include border-right(dotted, 1, tint($color-blue, 45%));
+				}
+				
+				&.next {
+					@include float(right);
+					@include border-radius(null, 1, null, 4);
+					@include border-left(dotted, 1, tint($color-blue, 45%));
+				}
+				
+				&:hover {
+					@include font(null, 12px, tint($color-blue, 85%), bold);
+					//@include bg-color( tint($color-blue, 10%));
+					@include vertical-gradient( tint($color-blue,15%), #FFF, 0%, 100%);
+				}
+			}
+		}
+		//end action button container
+	}
+	/** end option container **/
+	
+	//option-container-panel
+	.option-container-panel {
+		@include margin(null, null, null, null);
+		//@include border-bottom(solid, 1, darken($color-section-border, 15%) );
+		
+		.sub-reveal {
+			@include display(none);
+		}
+		
+		
+		//panel title
+		.panel-title {
+			@include font(null, 14px, tint($color-blue, 80%), bold );
+			@include padding(6px, null, 6px, 15px);
+			@include box-size(100%, null);
+			@include float(left);
+			@include border-top(dotted, 1, darken($color-section-border, 25%) );
+			//@include vertical-gradient( #fff, tint($color-blue, 18%), 50%, 100%);
+			
+			//&:first-child {
+				//@include border-top(dotted, 1, rgba(#ccc, 0) );
+			//}
+			
+			i.fa-caret-down{
+				@include display(none);
+			}
+			
+			i.fa-check-square{
+				@include display(none);
+			}
+			
+			//active
+			&.active {
+				//@include border-top(none, 1, #ccc);
+				@include vertical-gradient( #fff, rgba(tint($color-gray, 15%), 0), 0%, 0%);
+				
+				i.fa-caret-down{
+					@include display(inline);
+				}
+				
+				i.fa-caret-right{
+					@include display(none);
+				}
+			}
+			//end active
+			
+			//complete
+			&.complete {
+				i.fa-check-square{
+					@include font(null, 18px, #F30, null);
+					@include margin(null, null, null, -10px);
+					@include display(inline);
+				}
+			}
+			//end complete
+			
+		}
+		//end panel title
+		
+		//sub-panel
+		.sub-panel {
+			@include bg-color( tint($color-blue, 5%) );
+			@include border-top(solid, 1, tint($color-blue, 15%) );
+			@include padding(null, null, null, null);
+			
+			//title//
+			.sub-panel-title {
+				@include font(null, 14px, tint($color-blue, 65%), bold);
+				@include padding(15px, null, 0px, 21px);
+				@include box-size(100%, null);
+				@include float(left);
+				
+				&.small {
+					@include font(null, 12px, tint($color-blue, 65%), bold);
+					@include margin(null, null, 0px, null);
+					@include padding(null, null, 0px, null);
+				}
+			}
+			//end title //
+			
+			.hints-container {
+				@include margin(3px, null, null, 6px);
+			}
+			
+		}
+		//end sub-panel
+		
+		
+	}
+	//end option-container-panel
+			
+			
+	
+	/** active **/
+	&.active {
+		/** option title **/
+		.option-title {
+			@include font(null, null, #FFF, null);
+			@include bg-color($color-section-title-active);
+			@include border-radius(2, 0, 0, 2);
+			@include text-shadow(2, 2, 2, #000000, .65);
+			
+			/** status icon **/
+			i {
+				@include display(none);
+			}
+			/** end status icon **/
+		}
+		/** end option-title **/
+		
+	}
+	/** end active **/
+	
+	/** complete **/
+	&.complete{
+	  	
+		.option-title {
+			@include padding(null, null, null, 0px);
+			
+				/** status icon **/
+				i {
+					@include display(inline);
+				}
+				/** end status icon **/
+		}
+	}
+	/** end complete **/
+	
+	
+  }
+  /** end option section **/
+  
+  
+  /** right side **/
+  #rightSide {
+	
+	/** main-image-container **/
+	.main-image-container {
+		@include border(solid, 1, darken($color-section-border, 15%));
+		@include box-size(null, 450px);
+		@include border-radius(4,4,4,4);
+		@include drop-shadow(3, 3, 6, lighten($color-gray, 10%), .45);
+	}
+	/** end main-image-container **/
+  }
+  /** end right side **/
+  
+  /** end custom DS styles **/
+  
+  
+
+
