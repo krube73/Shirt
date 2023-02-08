@@ -1,0 +1,88 @@
+<option value="14.5-32" name="regular" class="desktop">14.5-32</option>
+<option value="14.5-33" name="regular" class="desktop">14.5-33</option>
+<option value="15-32" name="regular" class="desktop">15-32</option>
+<option value="15-33" name="regular" class="desktop">15-33</option>
+<option value="15-34" name="regular" class="desktop">15-34</option>
+<option value="15-35" name="regular" class="desktop">15-35</option>
+<option value="15.5-32" name="regular" class="desktop">15.5-32</option>
+<option value="15.5-33" name="regular" class="desktop">15.5-33</option>
+<option value="15.5-34" name="regular" class="desktop">15.5-34</option>
+<option value="15.5-35" name="regular" class="desktop">15.5-35</option>
+<option value="15.5-36" name="regular" class="desktop">15.5-36</option>
+<option value="16-32" name="regular" class="desktop">16-32</option>
+<option value="16-33" name="regular" class="desktop">16-33</option>
+<option value="16-34" name="regular" class="desktop">16-34</option>
+<option value="16-35" name="regular" class="desktop">16-35</option>
+<option value="16-36" name="regular" class="desktop">16-36</option>
+<option value="16.5-32" name="regular" class="desktop">16.5-32</option>
+<option value="16.5-33" name="regular" class="desktop">16.5-33</option>
+<option value="16.5-34" name="regular" class="desktop">16.5-34</option>
+<option value="16.5-35" name="regular" class="desktop">16.5-35</option>
+<option value="16.5-36" name="regular" class="desktop">16.5-36</option>
+<option value="17-32" name="regular" class="desktop">17-32</option>
+<option value="17-33" name="regular" class="desktop">17-33</option>
+<option value="17-34" name="regular" class="desktop">17-34</option>
+<option value="17-35" name="regular" class="desktop">17-35</option>
+<option value="17-36" name="regular" class="desktop">17-36</option>
+<option value="17.5-33" name="regular" class="desktop">17.5-33</option>
+<option value="17.5-34" name="regular" class="desktop">17.5-34</option>
+<option value="17.5-35" name="regular" class="desktop">17.5-35</option>
+<option value="17.5-36" name="regular" class="desktop">17.5-36</option>
+<option value="18-34*" name="regular" class="desktop">18-34*</option>
+<option value="18-35*" name="regular" class="desktop">18-35*</option>
+<option value="18-36*" name="regular" class="desktop">18-36*</option>
+<option value="18-37*" name="regular" class="desktop">18-37*</option>
+              
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+              
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+      </select>
